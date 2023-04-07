@@ -520,6 +520,32 @@ body {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
+.works-cover-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.works-example-link:hover .works-cover-text,
+.works-example-link:focus .works-cover-text {
+  transform: translate(0);
+}
+
+.works-cover-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  padding: 40px 32px;
+  background-color: var(--blue-text-color);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white-text-color);
+  transform: translateY(100%);
+  transition-property: transform, color, border, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 /*-------------------------CUSTOMERS-------------------------*/
 .customers {
   padding-top: 120px;
